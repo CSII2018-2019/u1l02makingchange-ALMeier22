@@ -11,8 +11,8 @@ public class U1L02MakingChange {
 		int pennies = 0;
 		int dimes = 0;
 		int quarters = 0;
-		int dollars = 0;
-		// Get input from user (change to usable value)
+		int dollars = 0; 
+		// Get input from user (change to usable  value)
 		String answer = JOptionPane.showInputDialog("Ener a"
 				+ " monitary value (ex: 1.56)");
 		double cash = Double.parseDouble(answer);
