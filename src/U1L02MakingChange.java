@@ -22,27 +22,20 @@ public class U1L02MakingChange {
 		// loop subtracting coin amount until money < coin amount 
 		
 		//count dollars 
-		while (pennies > 100) {
-			dollars++;
-			pennies -= 100;
-		}
+		dollars = (int)(pennies/100);
+		pennies = pennies % 100;
 		
 		// count quarters
-		while (pennies > 25) {
-			quarters++;
-			pennies -= 25;
-		}
+		quarters = (int)(pennies/25);
+		pennies = pennies % 25;
+		
 		// count dimes
-		while (pennies > 10) {
-			dimes++;
-			pennies -= 10;
-		}
+		dimes = (int)(pennies/10);
+		pennies = pennies % 10;
 
 		// count nickels
-		while (pennies > 5) {
-			nickels++;
-			pennies -= 5;
-		}
+		nickels = (int)(pennies/5);
+		pennies = pennies % 5;
 		
 		//pennies = money * 100 < don't need this b/c 
 		//converted to an integer vale 
